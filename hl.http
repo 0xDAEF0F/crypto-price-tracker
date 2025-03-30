@@ -8,9 +8,9 @@ Content-Type: application/json
     "type": "candleSnapshot",
     "req": {
         "coin": "BTC",
-        "interval": "15m",
-        "startTime": 1743223340563,
-        "endTime": 1743309715440
+        "interval": "1m",
+        "startTime": {{Date.now() - 86400000}},
+        "endTime": {{Date.now()}}
     }
 }
 

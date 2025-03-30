@@ -56,7 +56,7 @@ const solPriceChangePct = (solPriceChange / solT0ClosingPrice) * 100;
 const data = {
   btc: {
     price: Math.round(btcT1ClosingPrice),
-    priceAbbr: (Math.round(btcT1ClosingPrice) / 1000).toFixed(1) + "k",
+    priceAbbr: (Math.round(btcT1ClosingPrice) / 1000).toFixed(2) + "k",
     priceChange: btcPriceChange,
     priceChangePct: +btcPriceChangePct.toFixed(2),
   },
