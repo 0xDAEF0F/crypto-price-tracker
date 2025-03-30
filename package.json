@@ -1,0 +1,20 @@
+{
+  "name": "crypto-price-tracker",
+  "module": "index.ts",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "private": true,
+  "scripts": {
+    "start": "bun run build && bun ./dist/index.js",
+    "build": "bun build ./index.ts --outdir ./dist --target bun",
+    "dev": "bun --watch ./index.ts"
+  },
+  "type": "module",
+  "dependencies": {
+    "hyperliquid": "^1.7.4"
+  }
+}

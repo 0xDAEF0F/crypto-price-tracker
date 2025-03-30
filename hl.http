@@ -1,0 +1,31 @@
+@baseUrl = https://api.hyperliquid.xyz
+
+### Get candle snapshot
+POST {{baseUrl}}/info
+Content-Type: application/json
+
+{
+    "type": "candleSnapshot",
+    "req": {
+        "coin": "BTC",
+        "interval": "15m",
+        "startTime": 1743223340563,
+        "endTime": 1743309715440
+    }
+}
+
+### Get meta
+POST {{baseUrl}}/info
+Content-Type: application/json
+
+{
+    "type": "meta"
+}
+
+### Get all mids
+POST {{baseUrl}}/info
+Content-Type: application/json
+
+{
+    "type": "allMids"
+}
