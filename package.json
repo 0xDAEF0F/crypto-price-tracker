@@ -13,8 +13,5 @@
     "build": "bun build ./index.ts --outdir ./dist --target bun",
     "dev": "bun --watch ./index.ts"
   },
-  "type": "module",
-  "dependencies": {
-    "hyperliquid": "^1.7.4"
-  }
+  "type": "module"
 }
